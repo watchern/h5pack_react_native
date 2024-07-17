@@ -29,7 +29,7 @@ function App(): React.JSX.Element {
           width: '100%',
           height: '100%',
         }}>
-        <StaticWebView url="spectrogram/index.html" />
+        <StaticWebView url="dist/index.html" />
       </View>
     </SafeAreaView>
   );

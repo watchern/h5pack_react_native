@@ -1,5 +1,5 @@
 {
-  "name": "h5packNative",
+  "name": "@h5pack/native",
   "version": "0.0.1",
   "private": true,
   "description": "h5pack打包原生平台包的壳子",
