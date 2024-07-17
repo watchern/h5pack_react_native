@@ -41,7 +41,6 @@ function App(): React.JSX.Element {
           width: '100%',
           height: '100%',
         }}>
-        <Text>{Config.APP_NAME}</Text>
         <StaticWebView url="dist/index.html" />
       </View>
     </SafeAreaView>
