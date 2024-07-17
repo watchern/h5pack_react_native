@@ -5,7 +5,7 @@
  * @format
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   SafeAreaView,
   StatusBar,
@@ -17,6 +17,7 @@ import {
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {StaticWebView} from './src/components/WebView/StaticWebView';
 import Config from 'react-native-config';
+import BootSplash from 'react-native-bootsplash';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -24,6 +25,10 @@ function App(): React.JSX.Element {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  useEffect(() => {
+    BootSplash.hide();
+  }, []);
 
   return (
     <SafeAreaView style={backgroundStyle}>
