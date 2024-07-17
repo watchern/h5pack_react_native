@@ -2,16 +2,19 @@
   "name": "h5packNative",
   "version": "0.0.1",
   "private": true,
+  "description": "h5pack打包原生平台包的壳子",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "release": "cd ./android && ./gradlew assembleRelease"
   },
   "dependencies": {
     "react": "18.2.0",
-    "react-native": "0.74.3"
+    "react-native": "0.74.3",
+    "react-native-webview": "^13.10.5"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
