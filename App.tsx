@@ -6,10 +6,17 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StatusBar, useColorScheme, View} from 'react-native';
+import {
+  SafeAreaView,
+  StatusBar,
+  Text,
+  useColorScheme,
+  View,
+} from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {StaticWebView} from './src/components/WebView/StaticWebView';
+import Config from 'react-native-config';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -29,6 +36,7 @@ function App(): React.JSX.Element {
           width: '100%',
           height: '100%',
         }}>
+        <Text>{Config.APP_NAME}</Text>
         <StaticWebView url="dist/index.html" />
       </View>
     </SafeAreaView>
