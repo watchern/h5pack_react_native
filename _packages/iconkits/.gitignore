@@ -1,0 +1,9 @@
+node_modules/
+mipmap-hdpi
+mipmap-mdpi
+mipmap-xhdpi
+mipmap-xxhdpi
+mipmap-xxxhdpi
+android/
+logo.svg
+/dist/iconpack.cjs.js
