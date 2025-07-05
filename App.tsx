@@ -15,11 +15,13 @@ import {
 } from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-import {StaticWebView} from './src/components/WebView/StaticWebView';
+import {StaticWebView} from './src/components/StaticWebView.tsx';
 import Config from 'react-native-config';
 import BootSplash from 'react-native-bootsplash';
+import setGlobal from './src/common/global.js'
 
 function App(): React.JSX.Element {
+  setGlobal()
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {

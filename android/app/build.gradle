@@ -77,7 +77,7 @@ android {
 
     namespace "com.h5packnative"
     defaultConfig {
-        applicationId "com.h5packnative"
+        applicationId "com.h5packnative" // APP_ANDROID_VERSION
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
